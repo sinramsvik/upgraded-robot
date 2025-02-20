@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import postList from "@/app/post-list.json";
 import { PostType } from "@/app/types";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { FaCommentAlt } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
 import Link from "next/link";
