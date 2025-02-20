@@ -6,12 +6,12 @@ import MasterLayout from "@/app/components/master-layout";
 export default function PostsPage() {
   return (
     <MasterLayout>
-      <section className='flex flex-col min-h-screen p-8 sm:p-20 font-[family-name:var(--font-geist-sans)] max-w-screen-lg mx-auto mb-48'>
-        <h1 className='text-2xl sm:text-4xl mx-auto mb-4'>
+      <section className='flex flex-col max-w-[500px] px-8 py-8 sm:px-0 sm:py-20 mx-auto mb-48 text-center'>
+        <h1 className='text-2xl mb-4'>
           <span className='font-bold'>Shared</span>
           <span className='text-gray-600'> by you</span>
         </h1>
-        <ul className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-8'>
+        <ul className='grid grid-cols-1 gap-x-12 gap-y-12 sm:gap-x-0'>
           {postList.map((post: PostType) => {
             return (
               <li key={post.id}>

@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
@@ -23,9 +22,16 @@ const Thumbnail = ({ id, image, title, description }: PostType) => {
       <motion.div exit={{ opacity: 0 }}>
         <h2 className='text-4xl font-bold mb-3'>{title}</h2>
         <p className='text-gray-600 mb-8'>{description}</p>
-        <Link href={`/posts/${id}`} className='inline-block mb-0'>
-          <BiExpandAlt className='w-16 h-16 bg-black text-white rounded-full p-5' />
-        </Link>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ type: "spring", bounce: 0.6, delay: 0.1 }}
+          exit={{ scale: 0 }}
+        >
+          <Link href={`/posts/${id}`} className='inline-block mb-0'>
+            <BiExpandAlt className='w-16 h-16 bg-black text-white rounded-full p-5' />
+          </Link>
+        </motion.div>
       </motion.div>
     </div>
   );
