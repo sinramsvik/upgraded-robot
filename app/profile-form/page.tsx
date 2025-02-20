@@ -50,11 +50,7 @@ export default function ProfileFormPage() {
 
   return (
     <MasterLayout>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        aria-labelledby='formTitle'
-        className='max-w-screen-lg mx-auto p-8'
-      >
+      <form onSubmit={handleSubmit(onSubmit)} aria-labelledby='formTitle'>
         <h2 className='text-2xl font-bold mb-6' id='formTitle'>
           Profile Form
         </h2>
