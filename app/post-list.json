@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/images/tokyo.jpeg",
+    "title": "Lost in Tokyo",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.",
+    "author": "John Doe",
+    "comments": 8
+  },
+  {
+    "id": 2,
+    "image": "/images/nyc.jpg",
+    "title": "Found in New York",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.",
+    "author": "Jane Doe",
+    "comments": 20
+  },
+  {
+    "id": 3,
+    "image": "/images/paris.jpg",
+    "title": "Who really wants to go to Paris?",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.",
+    "author": "Johnny Doe",
+    "comments": 30
+  }
+]
