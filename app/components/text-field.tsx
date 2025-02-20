@@ -1,6 +1,5 @@
-import React from "react";
-import { TextFieldProps, TextInputProps } from "@/app/types";
 import { useController } from "react-hook-form";
+import { TextFieldProps, TextInputProps } from "@/app/types";
 import { cn } from "@/utils/cn";
 import { Profile } from "@/app/schema";
 

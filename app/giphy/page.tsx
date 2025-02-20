@@ -1,5 +1,5 @@
 import { GifFetcher } from "@/app/components/gif-fetcher";
-import MasterLayout from "../components/master-layout";
+import MasterLayout from "@/app/components/master-layout";
 
 export default function GiphyPage() {
   return (
