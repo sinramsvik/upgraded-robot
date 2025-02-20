@@ -6,7 +6,7 @@ import MasterLayout from "@/app/components/master-layout";
 export default function PostsPage() {
   return (
     <MasterLayout>
-      <section className='flex flex-col max-w-[500px] px-8 py-8 sm:px-0 sm:py-20 mx-auto mb-48 text-center'>
+      <div className='flex flex-col px-8 py-8 sm:px-0 sm:py-20 mx-auto text-center'>
         <h1 className='text-2xl mb-4'>
           <span className='font-bold'>Shared</span>
           <span className='text-gray-600'> by you</span>
@@ -25,7 +25,7 @@ export default function PostsPage() {
             );
           })}
         </ul>
-      </section>
+      </div>
     </MasterLayout>
   );
 }

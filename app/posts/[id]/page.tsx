@@ -24,15 +24,6 @@ export default function PostPage() {
 
   return (
     <main>
-      <header
-        className={
-          "fixed bottom-0 left-0 w-full flex justify-end z-10 text-white"
-        }
-      >
-        <Link href='/' className='p-8'>
-          Back to start
-        </Link>
-      </header>
       <section className='w-screen h-screen relative'>
         <Link href='/posts' className='absolute top-8 left-8 z-10 text-white'>
           <CgClose className='w-12 h-12' />

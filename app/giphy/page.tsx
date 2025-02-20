@@ -4,10 +4,10 @@ import MasterLayout from "@/app/components/master-layout";
 export default function GiphyPage() {
   return (
     <MasterLayout>
-      <main className='flex flex-col items-center justify-center h-screen'>
+      <div className='flex flex-col items-center'>
         <h1 className='text-2xl font-bold mb-4'>Giphy Fetcher</h1>
         <GifFetcher />
-      </main>
+      </div>
     </MasterLayout>
   );
 }
