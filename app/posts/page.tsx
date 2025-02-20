@@ -1,5 +1,3 @@
-"use client";
-
 import postList from "@/app/post-list.json";
 import { PostType } from "@/app/types";
 import Thumbnail from "@/app/components/thumbnail";
