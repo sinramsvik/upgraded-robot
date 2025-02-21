@@ -1,17 +1,16 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import postList from "@/app/post-list.json";
 import { PostType } from "@/app/types";
 import { motion } from "motion/react";
 import { FaCommentAlt } from "react-icons/fa";
 import { CgClose } from "react-icons/cg";
-import Link from "next/link";
 
 export default function PostPage() {
   const { id } = useParams();
-
+  const router = useRouter();
   //Let's pretend we're fetching dynamically
   const post = postList.find(
     (post) => post.id === parseInt(id as string)
@@ -22,12 +21,22 @@ export default function PostPage() {
     return <h1>Post not found</h1>;
   }
 
+  const handleNavigation = () => {
+    // For the sake of demoing the animation, we'll just use the router.back() method
+    // We could also add additional logic to handle direct visits, or history outside of domain
+    router.back();
+  };
+
   return (
     <main>
       <section className='w-screen h-screen relative'>
-        <Link href='/posts' className='absolute top-8 left-8 z-10 text-white'>
+        <button
+          type='button'
+          className='absolute top-8 left-8 z-10 text-white'
+          onClick={handleNavigation}
+        >
           <CgClose className='w-12 h-12' />
-        </Link>
+        </button>
         <motion.figure layoutId={id as string} className='h-svh relative'>
           <Image
             src={post.image as string}
